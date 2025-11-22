@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-blue-600 active:scale-95;
+  }
+
+  .btn-emergency {
+    @apply btn bg-emergency text-white hover:bg-red-600 active:scale-95 shadow-lg;
+  }
+
+  .btn-high {
+    @apply btn bg-high text-white hover:bg-orange-600 active:scale-95;
+  }
+
+  .btn-medium {
+    @apply btn bg-medium text-white hover:bg-yellow-600 active:scale-95;
+  }
+
+  .btn-low {
+    @apply btn bg-low text-white hover:bg-green-600 active:scale-95;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6;
+  }
+}
